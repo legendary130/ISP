@@ -1,0 +1,87 @@
+﻿<Window x:Class="Элементы_управления.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Элементы_управления"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <RadioButton IsChecked="True" Margin="5">
+            <WrapPanel>
+                <Image  Height="23" Source="3. Леопард.jpg" />
+                <GroupBox Header="Parameters"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="a" Grid.Column="0" Grid.Row="0"/>
+                    <TextBlock Text="0,00" Grid.Column="1" Grid.Row="0" MinWidth="70" Name="R1TextA"/>
+                    <Label Content="f" Grid.Column="0" Grid.Row="1"/>
+                    <ComboBox Grid.Column="1" Grid.Row="1" SelectedIndex="0" Name="R1ComBof" >
+                        <ComboBoxItem Content="4"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="6"/>
+                        <ComboBoxItem Content="7"/>
+                        <ComboBoxItem Content="8"/>
+                        <ComboBoxItem Content="9"/>
+                    </ComboBox>
+                </Grid>
+
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton IsChecked="True" Margin="5">
+            <StackPanel  >
+                <Image Height="23" Source="1. Черный кот с рыбкой.jpg" />
+                <GroupBox Header="Parameters"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="a"/>
+                    <TextBox x:Name="R2TextA" Text="0,00" MinWidth="70"/>
+                    <Label Content="f"/>
+                    <ComboBox x:Name="R2ComboF" MinWidth="100">
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="40"/>
+                    </ComboBox>
+                </StackPanel>
+                </StackPanel>
+        </RadioButton>
+        <RadioButton IsChecked="True" Margin="5">
+            <StackPanel>
+                <Image Height="30" Source="3. Леопард.jpg" />
+                <GroupBox Header="Parameters">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="a"/>
+                        <TextBox x:Name="R3TextA" Text="0,00" MinWidth="50"/>
+                        <Label Content="b"/>
+                        <TextBox x:Name="R3TextB" Text="0,00" MinWidth="50"/>
+                        <Label Content="c"/>
+                        <ComboBox x:Name="R3Combo" MinWidth="50" SelectedIndex="0">
+                            <ComboBoxItem Content="0"/>
+                            <ComboBoxItem Content="1"/>
+                        </ComboBox>
+                        <Label Content="d"/>
+                        <ComboBox MinWidth="70" SelectedIndex="0">
+                            
+                        </ComboBox>
+                    </StackPanel>
+                </GroupBox>
+                          
+            </StackPanel>
+        </RadioButton>
+        <RadioButton IsChecked="True" Margin="5">
+            <WrapPanel></WrapPanel>
+        </RadioButton>
+        <Button Content="Считать" Width="100" Margin="346,0"/>
+        
+
+
+
+    </StackPanel>
+</Window>
