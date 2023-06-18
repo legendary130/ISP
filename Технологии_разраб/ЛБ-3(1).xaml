@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="Grid1" Margin="0,0,2,0">
+        <Menu Margin="0,0,364,383" Background="White">
+            <MenuItem Header="Меню">
+                <MenuItem Header="Красный" Click="MenuItem_Click" MouseMove="MenuItem_MouseMove"/>
+                <MenuItem Header="Синий" Click="MenuItem_Click_1" MouseMove="MenuItem_MouseMove_1" />
+                <MenuItem Header="Чёрный" Click="MenuItem_Click_2" MouseMove="MenuItem_MouseMove_2"/>
+                <MenuItem Header="Информация о разработчике" Click="MenuItem_Click_3" MouseMove="MenuItem_MouseMove_3"/>
+            </MenuItem>
+            <ToolBar Height="31" Background="White">
+                <Button Content="Красный" Click="MenuItem_Click" MouseMove="MenuItem_MouseMove"/>
+                <Button Content="Синий" Click="MenuItem_Click_1" MouseMove="MenuItem_MouseMove_1"/>
+                <Button Content="Чёрный" Click="MenuItem_Click_2" MouseMove="MenuItem_MouseMove_2"/>
+                <Button Content="Информация о разработчике" Click="MenuItem_Click_3" MouseMove="MenuItem_MouseMove_3"/>
+            </ToolBar>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Margin="0,377,0,0">
+            <TextBlock x:Name="TextBlock1"/>
+        </StatusBar>
+    </Grid>
+</Window>
