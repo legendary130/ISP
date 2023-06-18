@@ -1,4 +1,0 @@
-D:\Элементы управления\obj\Debug\Элементы управления.csproj.AssemblyReference.cache
-D:\Элементы управления\obj\Debug\Элементы управления.csproj.SuggestedBindingRedirects.cache
-D:\Элементы управления\obj\Debug\App.g.cs
-D:\Элементы управления\obj\Debug\Элементы управления_MarkupCompile.cache
