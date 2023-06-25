@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <WrapPanel Height="NaN" Margin="0,0,0,283">
+            <Image Source="/Снимок экрана (81).png" Height="88" Width="164"/>
+            <Grid Width="616" RenderTransformOrigin="0.499,0.479" Height="116">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="53*"/>
+                    <ColumnDefinition Width="563*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="N=" Grid.Row="0" Grid.Column="0"/>
+                <Label Content="K=" Grid.Row="1" Grid.Column="0"/>
+                <Label Content="p=" Grid.Row="2" Grid.Column="0"/>
+                <Label Content="y=" Grid.Row="3" Grid.Column="0"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Margin="0,0,491,0" Width="NaN" Name="TextBox1"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Margin="0,0,491,0" Width="NaN" Name="TextBox2"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="0,0,491,0" Width="NaN" Name="TextBox3"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Margin="0,0,491,0" Width="NaN" Name="TextBox4"/>
+            </Grid>
+        </WrapPanel>
+        <Button Content="Считать" Click="Button_Click" Height="NaN" Margin="10,205,655,207" Width="NaN"/>
+        <Label  Name="Ответ" Height="NaN" Margin="242,205,385,207" Width="NaN"/>
+    </Grid>
+</Window>
